@@ -1,0 +1,8 @@
+.board-image {
+    width: 700px;
+    height: auto;
+    border: 1px grey solid;
+    border-radius: 3px;
+    padding: 18px;
+
+}
