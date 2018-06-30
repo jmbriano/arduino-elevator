@@ -1,3 +1,31 @@
+body {
+  margin: 0px;
+}
+
+pre {
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 20px;
+  font-size: medium;
+  margin: 13px;
+}
+
+.content {
+  font-family: monospace;
+  font-size: 12pt;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.header {
+  background-image: url("../images/header.jpg");
+  height: 300px;
+  background-size: cover;
+  background-position-y: -180px;
+}
+
 .board-image {
     width: 700px;
     height: auto;
@@ -5,4 +33,24 @@
     border-radius: 3px;
     padding: 18px;
 
+}
+
+.box {
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid;
+  margin: 13px;
+}
+.warning {
+  background-color: #ffaaaa;
+  border-color: red;
+}
+.tip {
+  background-color: #70a5f9;
+  border-color: blue;
+}
+
+.diy {
+  background-color: #f2c660;
+  border-color: grey;
 }
