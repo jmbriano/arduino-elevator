@@ -3,7 +3,7 @@ body {
 }
 
 pre {
-  background-color: lightgrey;
+  background-color: #edeeef;
   border: 1px solid grey;
   border-radius: 3px;
   display: inline-block;
@@ -39,7 +39,7 @@ pre {
   padding: 5px;
   border-radius: 3px;
   border: 1px solid;
-  margin: 13px;
+  margin: 13px 50px 13px 50px;
 }
 .warning {
   background-color: #ffaaaa;
@@ -53,4 +53,23 @@ pre {
 .diy {
   background-color: #f2c660;
   border-color: grey;
+}
+div.centeredImageBar {
+  text-align: center;
+}
+
+div.centeredImageBar img {
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+div.centeredImageBar .separated {
+  margin-left: 50px;
+}
+
+img.inlineImage200 {
+  height: 200px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
