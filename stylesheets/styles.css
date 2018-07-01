@@ -40,6 +40,7 @@ pre {
   border-radius: 3px;
   border: 1px solid;
   margin: 13px 50px 13px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .warning {
   background-color: #ffaaaa;
@@ -72,4 +73,17 @@ img.inlineImage200 {
   height: 200px;
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img.inlineImage100 {
+  height: 100px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+}
+
+
+img.schematicSymbol {
+  height: 180px;
+  padding: 10px;
 }
