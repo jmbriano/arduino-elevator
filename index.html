@@ -61,27 +61,51 @@
           <img class="inlineImage200" src="images/leds.jpg"/>
           <img class="separated inlineImage200 schematicSymbol" src="images/LedSymbol.png"/>
         </div>
-
+        <h2>Protoboard</h2>
+        <p>The protoboard (Prototyping board) is not an electronic component <i>per-se</i>. Instead, it is a board that helps mounting electronic circuits. Internally, several of the holes are connected between them. This allows to connect components without welding them. Just inserting the components in holes connected underneath will close the circuit between them (as if you have weld them).</p>
+        <p>Typical protoboards have about 100 lines of 5 holes connected (red rectangle below), and 4 long lines in the sides (green rectangle below). Some models, have 8 half lines instead of 4 (they are not connected in the middle). Normally, the power supliers are connected to the long lines.</p>
+        </p>
+        <div class="centeredImageBar">
+          <img class="inlineImage200" src="images/protoboard.png"/>
+        </div>
         <div class="diy box">
-          <span><b>HANDS ON 1</b></br>
-            It is time to build your first circuit. Find a LED, a 1k ressistor, a 9V battery and some wires and let the LED shine!</span>
+          <p><b>HANDS ON 1</b></br></p>
+            <p>It is time to build your first circuit. Find a protoboard, a LED, a 1000Ω resistor (1kΩ), a 9V battery and some wires and let the LED shine!</p>
+            <p>1000Ω resistor has the secuence Brown-Black-Red Gold. This colors indicate the resistance. You can read more about this nomenclature in the following <a href="https://en.wikipedia.org/wiki/Electronic_color_code" target="_blank">color code</a> article. Brown=1, Black=0, Red=x100 = 1000Ω</p>
             <div class="centeredImageBar">
               <img class="inlineImage300NoShadow" src="images/diy1.1.png"/>
               <img class="separated inlineImage300NoShadow" src="images/diy1.2.png"/>
             </div>
         </div>
         <div class="tip box">
-          <span><b>TIP:</b> The LED will only turn ON if the electricity flows in the right direction. If it does not turn ON, try inverting the connectors</span>
+          <span><b>TIP:</b> The LED will only turn ON if the electricity flows in the right direction. If it does not turn ON, try inverting the connectors. If you look at the LED from top, you will see that one side is flat, that side should be connected to the negative end of the power source.</span>
         </div>
         <h2>Switches</h2>
-
-        <h2>Puting all together</h2>
-        <div class="warning box">
-          <span><b>WARNING:</b> The LED will only turn ON if the electricity flows in the right direction. If it does not turn ON, try inverting the connectors</span>
+        <p>Congratulations, you have your first working circuit!!! But there is one litle problem. How do you turn the LED OFF? No, unplugging the battery is not an option!</p>
+        <p>In order to be able to open and close circuits we need switches. A switch works as any light interruptor you may have at home. In one position it closes the circuit and in the other the circuit remains open. When the circuit is closed, there is electric current going through it and the light turns ON.</p>
+        <p>When the button is pressed, connectors on one side (1s) get connected to those in the other side (2s). If the button is not pressed, then the circuit stays open (no current can pass)</p>
+        <div class="centeredImageBar">
+          <img class="inlineImage200" src="images/11-switch.jpg"/>
+          <img class="separated inlineImage200 schematicSymbol" src="images/11-switch_schem.png"/>
         </div>
-        <code>lalala</code>
-        <img class="board-image" src="images/10-led_bb.png"/>
-
+        <p>Switches will also allow us to generate digital 0s and 1s, but we still need to learn a bit more about electricity first. We will get there very soon.</p>
+        <h2>Puting all together</h2>
+        <div class="diy box">
+          <p><b>HANDS ON 2</b></br></p>
+            <p>Add a switch to the circuit of previous exercise. You can now turn the ligth ON only when you press the button.</p>
+            <div class="centeredImageBar">
+              <img class="inlineImage300NoShadow" src="images/11-switchCircuit.png"/>
+              <img class="separated inlineImage300NoShadow" src="images/11-switchCircuit_schem.png"/>
+            </div>
+        </div>
+        <h1>Signals</h1>
+        <h2>Digital signal</h2>
+        (Explain the 0 vs 1 theory. Digital inputs in Arduino.)
+        <h2>Creating digital signal</h2>
+        (Explain how to build a normally up circuit and a normally down circuit with one resistor and one switch)
+<br><br><br><br><br><br>
+<hr/>
+<br><br><br><br><br><br>
       <h1>Arduino</h1>
       <pre>
         <code>
