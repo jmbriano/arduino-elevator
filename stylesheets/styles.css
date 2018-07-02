@@ -82,6 +82,11 @@ img.inlineImage100 {
   padding: 10px;
 }
 
+img.inlineImage300NoShadow {
+  height: 300px;
+  border: 1px solid black;
+}
+
 
 img.schematicSymbol {
   height: 180px;

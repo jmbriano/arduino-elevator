@@ -10,11 +10,11 @@
     <div class="content">
       <h1>Introduction</h1>
       <p>The following tutorial is meant to be a introduction to Arduino programming. It is designed in a way so students can learn first the basics of electronics to understand the circuits and then build a model themelves.
-        <p>After introducing the electronic components and their basic usage circuits, we will introduce the Arduino board and it is programming basics.</p>
+        <p>After introducing the electronic components and their basic usage circuits, an introducion of the Arduino board will follow, also its programming basics.</p>
         <p>Last, a problem will be presented to guide the tutorial: an Elevator. This tutorial will guide you through the circuit and the programming of it.</p>
         <p>Along this page, you will find Warning, tips, and <i>Do It Yourself</i> sections. You will identify them based on the box styles</p>
         <div class="warning box">
-          <span><b>WARNING:</b> The LED will only turn ON if the electricity flows in the right direction. If it does not turn ON, try inverting the connectors</span>
+          <span><b>WARNING:</b> Do not connect a LED directly to a battery with no resistor, it will most probably burn the LED (and your fingers!!).</span>
         </div>
         <div class="tip box">
           <span><b>TIP:</b> The LED will only turn on if the electricity flows in the right direction. If it does not turn on, try inverting the connectors</span>
@@ -42,17 +42,43 @@
           <img class="inlineImage200" src="images/resistors.jpg"/>
           <img class="separated inlineImage200 schematicSymbol" src="images/resistorSymbol.png"/>
         </div>
+        <p>There is relation between the potential consumed by a component, the current it goes through it and its resistance. the relation is called <a href="https://en.wikipedia.org/wiki/Ohm%27s_law" target="_blank">Ohm's Law</a>. The formula is shown below. It can be read as: <i>given a certain potential (V), the bigger the resistance (R), the smaller the current (I).</i>
+        </p>
         <div class="centeredImageBar">
           <img class="inlineImage100" src="images/ohm.svg"/>
         </div>
+        <p>For example, let's imagine the potential (V) between the ends of the resistor below is 5V. Then also asume that the resistanse (R) is 500Ω. The current going through the resistor will we 5V/500Ω = 0,01 A.</p>
+        <p>Amperes, normally are depicted in milli-amperes (1000mA = 1A), so 0,01A is the same as 10mA</p>
+        <div class="centeredImageBar">
+          <img class="inlineImage100" src="images/resistorCurrent.png"/>
+        </div>
+
         <h2>LEDs</h2>
+        <p>A Light-Emitting Diode (LED) is capable of producing light when current goes through it. Normally a LED works with 1.5V between its connectors and  10mA current, under normal operation.</p>
+        <p>LEDs, as diodes, have polarity. This means that it is not the same if you invert the connectors.</p>
+        <p>LEDs come in different colors, as you can see in the left image. As before, the right is a shcematic representation of it.</p>
         <div class="centeredImageBar">
           <img class="inlineImage200" src="images/leds.jpg"/>
           <img class="separated inlineImage200 schematicSymbol" src="images/LedSymbol.png"/>
         </div>
+
+        <div class="diy box">
+          <span><b>HANDS ON 1</b></br>
+            It is time to build your first circuit. Find a LED, a 1k ressistor, a 9V battery and some wires and let the LED shine!</span>
+            <div class="centeredImageBar">
+              <img class="inlineImage300NoShadow" src="images/diy1.1.png"/>
+              <img class="separated inlineImage300NoShadow" src="images/diy1.2.png"/>
+            </div>
+        </div>
+        <div class="tip box">
+          <span><b>TIP:</b> The LED will only turn ON if the electricity flows in the right direction. If it does not turn ON, try inverting the connectors</span>
+        </div>
         <h2>Switches</h2>
 
         <h2>Puting all together</h2>
+        <div class="warning box">
+          <span><b>WARNING:</b> The LED will only turn ON if the electricity flows in the right direction. If it does not turn ON, try inverting the connectors</span>
+        </div>
         <code>lalala</code>
         <img class="board-image" src="images/10-led_bb.png"/>
 
