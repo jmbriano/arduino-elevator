@@ -55,6 +55,7 @@ pre {
   background-color: #f2c660;
   border-color: grey;
 }
+
 div.centeredImageBar {
   text-align: center;
 }
@@ -91,4 +92,23 @@ img.inlineImage300NoShadow {
 img.schematicSymbol {
   height: 180px;
   padding: 10px;
+}
+
+div.quizImageAndRadioSet {
+  text-align: left;
+  display: block;
+  margin-left: 20px;
+  height: 310px;
+}
+
+div.quizImageAndRadioSet form {
+  float: left;
+  padding-left: 20px;
+}
+
+
+img.quizImage300 {
+  height: 300px;
+  float: left;
+  border: 1px solid black;
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Arduino Elevator - A tutorial to Arduino</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
+    <script type="text/javascript" src="quiz.js"/>
+    </script>
   </head>
   <body>
     <div class="header"></div>
@@ -69,7 +71,7 @@
           <img class="inlineImage200" src="images/protoboard.png"/>
         </div>
         <div class="diy box">
-          <p><b>HANDS ON 1</b></br></p>
+          <p><b>HANDS ON 1</b></p>
             <p>It is time to build your first circuit. Find a protoboard, a LED, a 1000Ω resistor (1kΩ), a 9V battery and some wires and let the LED shine!</p>
             <p>1000Ω resistor has the secuence Brown-Black-Red Gold. This colors indicate the resistance. You can read more about this nomenclature in the following <a href="https://en.wikipedia.org/wiki/Electronic_color_code" target="_blank">color code</a> article. Brown=1, Black=0, Red=x100 = 1000Ω</p>
             <div class="centeredImageBar">
@@ -91,7 +93,7 @@
         <p>Switches will also allow us to generate digital 0s and 1s, but we still need to learn a bit more about electricity first. We will get there very soon.</p>
         <h2>Puting all together</h2>
         <div class="diy box">
-          <p><b>HANDS ON 2</b></br></p>
+          <p><b>HANDS ON 2</b></p>
             <p>Add a switch to the circuit of previous exercise. You can now turn the ligth ON only when you press the button.</p>
             <div class="centeredImageBar">
               <img class="inlineImage300NoShadow" src="images/11-switchCircuit.png"/>
@@ -99,8 +101,39 @@
             </div>
         </div>
         <h1>Signals</h1>
+        <p>As described in the <a href="https://en.wikipedia.org/wiki/Signal">Wikipedia</a>, a signal is a function that "conveys information about the behavior or attributes of some phenomenon". In more practical words, a signal is an electric representation of a given reality. In this tutorial, a signal can be a representation of the state of the button. Pressed or not pressed.</p>
+        <p>There are diferent type of signals, but we will only focus in two of them here: Digital and Analog signals.</p>
         <h2>Digital signal</h2>
-        (Explain the 0 vs 1 theory. Digital inputs in Arduino.)
+        <p>A digital signal is a signal that is being used to represent data as a sequence of discrete values; at any given time it can only take on one of a finite number of values. The button is an example of digital signal. </p>
+        <p>It can either be pressed or not pressed, but it can not be half pressed, or a third pressed. This particular case of digital signal where only 2 possible values exist is called a binary signal. </p>
+        <p>We can then map each state of the button to a value: 1 for a button pressed and 0 for a button released, for example.</p>
+        <p>To better ilustrate this, lets do a short Quiz.</p>
+        <div class="quiz box">
+          <p><b>QUIZ 1</b></p>
+            <p>Which potential (V) do you think the loose purple end has?</p>
+            <div class="quizImageAndRadioSet">
+              <img class="quizImage300" src="images/11-Quiz1.png"/>
+              <form >
+                <p><input type="radio" name="q1" value="q1r1">9 V</input></p>
+                <p><input type="radio" name="q1" value="q1r2">4.5 V</input></p>
+                <p><input type="radio" name="q1" value="q1r3">0 V</input></p>
+                <p><input type="submit" onclick="validateQuiz('q1'); return false;"></input></p>
+              </form>
+            </div>
+        </div>
+        <div class="quiz box">
+          <p><b>QUIZ 2</b></p>
+            <p>If the circuit is the same, but now the button is pressed. What would be the potential (V) in the purple end?</p>
+            <div class="quizImageAndRadioSet">
+              <img class="quizImage300" src="images/11-Quiz1.png"/>
+              <form >
+                <p><input type="radio" name="q2" value="q2r1">9 V</input></p>
+                <p><input type="radio" name="q2" value="q2r2">4.5 V</input></p>
+                <p><input type="radio" name="q2" value="q2r3">0 V</input></p>
+                <p><input type="submit" onclick="validateQuiz('q2'); return false;"></input></p>
+              </form>
+            </div>
+        </div>
         <h2>Creating digital signal</h2>
         (Explain how to build a normally up circuit and a normally down circuit with one resistor and one switch)
 <br><br><br><br><br><br>
