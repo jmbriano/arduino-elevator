@@ -56,6 +56,11 @@ pre {
   border-color: grey;
 }
 
+.quiz {
+  background-color: lightskyblue;
+  border-color: darkblue;
+}
+
 div.centeredImageBar {
   text-align: center;
 }
